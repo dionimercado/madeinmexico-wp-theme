@@ -50,6 +50,11 @@ function mim_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mim_enqueue_scripts', 1000000000 );
 
+function admin_style() {
+  wp_enqueue_style('admin-styles', get_template_directory_uri().'/css/admin.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
+
 
 
 require_once( TEMPLATEPATH . '/functions/posttype.php' );

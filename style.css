@@ -7,6 +7,7 @@ Author URI: http://dionimercado.com
 Description: Exclusie wordpress theme for madeinmexico.com
 */
 
+
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -644,7 +645,7 @@ position: relative;
 }
 .resevation-block {
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 33px 30px;
+    padding: 33px 30px 4px 30px;
 }
 .reservation-form {
 	margin-top: 40px;
@@ -672,6 +673,8 @@ position: relative;
 }
 
 .reservation-form button {
+  float: right;
+  margin-top: -75px;
   background-color: transparent;
   color: #d8000d;
   border: 2px solid #d8000d;
@@ -682,7 +685,6 @@ position: relative;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   cursor: pointer;
-  margin-top: -10px;
   transition: all .3s ease;
 }
 .reservation-form button:hover {
@@ -691,6 +693,7 @@ position: relative;
 
 }
 
+.rtb-select.location,
 .rtb-booking-form legend {
   display: none;
 }

@@ -16,9 +16,17 @@ jQuery(function($){
 
   jQuery('#rtb-party').prepend('<option value="" disabled selected>Party Size</option>');
   if(jQuery('#rtb-party').find('option:selected').val() == ""){
-        jQuery(this).css('color','#999');
-        jQuery(this).children().css('color','red');
+    jQuery(this).css('color','#999');
+    jQuery(this).children().css('color','red');
+  }
+
+  jQuery("#rtb-location-2").prepend("<option selected disabled>Location</option>")
+  jQuery("#rtb-location-2").on("change", function(e) {
+    if(e.target.value == 1) {
+      console.log("HArlem")
+      window.location.replace("https://madeinmexico.nyc/harlem/#rsvp");
     }
+  });
 
   jQuery(".mim-events").owlCarousel({
     loop: false,
